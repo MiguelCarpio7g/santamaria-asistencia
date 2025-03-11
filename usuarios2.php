@@ -105,7 +105,7 @@
 						<input type="date"  name="fecha2" value="<?php 
 						date_default_timezone_set('America/Guayaquil');
 						
-						echo date('Y-m-d'); ?>" >
+						echo date('Y-m-d'); ?>">
 							</div>
      <div class="col-md-2">
 		<button type="submit" name="generar_reporte">

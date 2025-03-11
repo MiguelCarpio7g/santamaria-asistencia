@@ -97,7 +97,7 @@ $fullname = $first_name . " " . $first_last_name;
                     $status_empleado = ($status == "1") ? "Activo" : "Inactivo";
                     $rol = $row['rol_empleado'];
                     $rol_usu = ($rol == "2") ? "Administrador" : "Empleado";
-                    $date_added = date('d/m/Y', strtotime($row['fecha_empleados']));
+                    $date_added = date('Y/m/d', strtotime($row['fecha_empleados']));
                     ?>
                     <input type="hidden" value="<?php echo $row['ced_empleado']; ?>" id="cedula_usu<?php echo $user_id; ?>">
                     <input type="hidden" value="<?php echo $row['nombre_empleado']; ?>" id="nombre_usu<?php echo $user_id; ?>">

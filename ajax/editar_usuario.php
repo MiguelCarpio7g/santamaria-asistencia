@@ -16,7 +16,7 @@ $hora_salida = $_POST["hora_salida"];
 
 // Obtener el ID del usuario logueado (suponiendo que se almacena en la sesión)
 $user_id = $_SESSION['cedula_usu'];
-
+date_default_timezone_set('America/Guayaquil');
 // Obtener la fecha actual en el formato adecuado para MySQL
 $fecha_actual = date('Y-m-d');
 

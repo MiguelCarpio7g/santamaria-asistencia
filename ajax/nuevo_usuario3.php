@@ -91,7 +91,7 @@ if (version_compare(PHP_VERSION, '5.3.7', '<')) {
         ) {
             require_once ("../config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
 			require_once ("../config/conexion.php");//Contiene funcion que conecta a la base de datos
-
+date_default_timezone_set('America/Guayaquil');
 
         $nombre = mysqli_real_escape_string($con,(strip_tags($_POST["nombre_usu"],ENT_QUOTES)));
 				$apellido = mysqli_real_escape_string($con,(strip_tags($_POST["apellido_usu"],ENT_QUOTES)));

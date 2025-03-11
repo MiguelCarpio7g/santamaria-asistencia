@@ -99,7 +99,7 @@ if (version_compare(PHP_VERSION, '5.3.7', '<')) {
         $user_email = mysqli_real_escape_string($con,(strip_tags($_POST["email_usu"],ENT_QUOTES)));
           $telefono = mysqli_real_escape_string($con,(strip_tags($_POST["telefono_usu"],ENT_QUOTES)));
           
-         
+         date_default_timezone_set('America/Guayaquil');
               $direccion = mysqli_real_escape_string($con,(strip_tags($_POST["direccion_usu"],ENT_QUOTES)));
 				$user_password = $_POST['user_password_new'];
 				$date_added=date("Y-m-d");

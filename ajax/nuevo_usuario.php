@@ -9,12 +9,13 @@ if (version_compare(PHP_VERSION, '5.3.7', '<')) {
 
 require_once ("../config/db.php"); // Contiene las variables de configuración para conectar a la base de datos
 require_once ("../config/conexion.php"); // Contiene función que conecta a la base de datos
-
+date_default_timezone_set('America/Guayaquil');
 // Obtener la hora de entrada desde el formulario
 $hora_entrada = $_POST["Horade_entrada"];
 
 // Obtener el ID del usuario logueado (suponiendo que se almacena en la sesión)
 $user_id = $_SESSION['cedula_usu'];
+
 
 // Obtener la fecha actual en el formato adecuado para MySQL
 $fecha_actual = date('Y-m-d');

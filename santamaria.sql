@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-06-2024 a las 14:19:15
+-- Tiempo de generación: 11-03-2025 a las 04:16:50
 -- Versión del servidor: 10.1.9-MariaDB
 -- Versión de PHP: 5.6.15
 
@@ -46,8 +46,8 @@ CREATE TABLE `tbl_empleados` (
 INSERT INTO `tbl_empleados` (`ced_empleado`, `nombre_empleado`, `apellido_empleado`, `telefono_empleado`, `email_empleado`, `status_empleado`, `rol_empleado`, `password_empleado`, `direccion_empleado`, `fecha_empleado`) VALUES
 ('0916106727', 'Mario', 'Juaquin', '1478547874', 'mario@hotmail.com', 1, 3, '$2y$10$BYc/buzUDFEY4i8wosaS4OquWJen7SKJ0.2deKVIRyz.nCPA3l0GC', 'los seibos', '2024-06-14'),
 ('0944028356', 'Killertyh', 'Sssrrhj', '4521785471', 'killer@hotmail.com', 1, 3, '$2y$10$7fl0eyJwuMDKDpOwlxkseeHppDdnUVnYHEzPQwyllzX7WC6QdQBHm', 'central', '2024-06-26'),
-('0950664334', 'Miguel Efrain', 'Carpio Gomez', '0858526431', 'miguelcarpio1996@hotmail.com', 1, 2, '$2y$10$ENCsTqw4utK15X09hWwRl.nse9twWaYvnQXD7u7Yt4nIV2dmeWKcG', 'LAS ORQUIDEA', '2024-06-23'),
-('0951633247', 'Roman Romanty', 'Romanf Arjonaf', '0858526431', 'romana1234@hotmail.com', 1, 3, '$2y$10$ny1G4..y2BwoXOXGKRZPIOQY0Dkjr89RHZN/IHd8vwrHN3YvyvEwK', 'LAS ORQUIDEA', '2024-06-25');
+('0950664334', 'ADMIN', 'ADMIN', '0858526431', 'admin@hotmail.com', 1, 2, '$2y$10$ENCsTqw4utK15X09hWwRl.nse9twWaYvnQXD7u7Yt4nIV2dmeWKcG', 'LAS ORQUIDE', '2024-06-23'),
+('0951633247', 'Roman Su', 'Ro', '0854215748', 'roman@gmail.com', 1, 3, '$2y$10$c6bwSrFjdj02WgK0uYkZJurI4KE./vjshW7RZNvH42ob.DC5lvEJm', 'Samanes 6', '2025-03-10');
 
 -- --------------------------------------------------------
 
@@ -79,7 +79,11 @@ INSERT INTO `tbl_registrodeasistencia` (`id_empleado`, `ced_empleado`, `hora_sal
 (9, '0916106727', '01:51:00', '01:49:00', '2024-06-26'),
 (10, '0944028356', '07:07:00', '07:01:00', '2024-06-23'),
 (11, '0944028356', '07:10:00', '07:09:00', '2024-06-20'),
-(12, '0944028356', '07:14:00', '07:11:00', '2024-06-26');
+(12, '0944028356', '07:14:00', '07:11:00', '2024-06-26'),
+(13, '0950664334', '11:11:00', '11:11:00', '2024-09-03'),
+(14, '0916106727', '11:12:00', '11:12:00', '2024-09-03'),
+(20, '0916106727', '21:26:00', '21:25:00', '2025-03-10'),
+(21, '0950664334', '21:29:00', '21:29:00', '2025-03-10');
 
 --
 -- Índices para tablas volcadas
@@ -107,7 +111,7 @@ ALTER TABLE `tbl_registrodeasistencia`
 -- AUTO_INCREMENT de la tabla `tbl_registrodeasistencia`
 --
 ALTER TABLE `tbl_registrodeasistencia`
-  MODIFY `id_empleado` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_empleado` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -93,13 +93,19 @@
 
 							<label  form= "fecha1" class="col-md-1 ">De:</label>
 							<div class="col-md-2">
-						  <input type="date" name="fecha1" value="<?php echo date('Y-m-d'); ?>" readonly>
+						  <input type="date" name="fecha1" value="<?php 
+						  date_default_timezone_set('America/Guayaquil');
+						  
+						  echo date('Y-m-d'); ?>" >
 						</div>
 
 
             <label  form= "fecha2" class="col-md-1">A:</label>
 						<div class="col-md-2">
-						<input type="date"  name="fecha2" value="<?php echo date('Y-m-d'); ?>" readonly>
+						<input type="date"  name="fecha2" value="<?php 
+						date_default_timezone_set('America/Guayaquil');
+						
+						echo date('Y-m-d'); ?>" >
 							</div>
      <div class="col-md-2">
 		<button type="submit" name="generar_reporte">

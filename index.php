@@ -1,3 +1,3 @@
 <?php
-header("Location: compras.php");
+header("Location: login.php");
 ?>
